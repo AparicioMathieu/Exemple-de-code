@@ -1,0 +1,908 @@
+
+@font-face
+{
+	font-family: 'Kingthings_Calligraphica';
+	src: url('Kingthings_Calligraphica_2-webfont.woff');
+}
+/*DEBUT MODIFIER .image remplace h1*/
+.image
+{
+	display: block;
+	margin: auto;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 540px;
+	
+}
+
+
+.navbar
+{
+width: 850px;
+display: block;
+margin: auto;
+padding: 2px;
+
+
+}
+
+input 
+{
+	border-radius: 5px;
+	}
+
+.ensemblecolle
+{
+	background-image: url("img/mainback.png");
+	
+	display:flex;
+	flex-direction: column;
+	margin: 20px auto 0px auto;
+	border-radius: 30px;
+	width: 1200px;
+	height: 800px;
+	
+	
+	
+}
+
+body
+{
+	position:relative;
+	background-image: url("img/bg_vaisseau.jpg");
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.label
+{
+	color: rgb(255, 255, 255);
+	font-family: 'Comic Sans MS';
+}
+
+.textbande
+{
+	color:white;
+	font-weight:bold;
+	padding-left:15px;
+	margin-top:60px;;
+	margin-bottom:2px;
+	margin-left: 32px;
+	width: 1104px;
+	height: 30px;
+	text-shadow: 1px 1px 4px white;
+	font-size: 22px;
+}
+
+.bande
+{
+	
+}
+
+.sousbande
+{
+	display:block;
+	padding-left:15px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.imgbarre
+{
+	display: block;
+	margin-left: 80px;
+	
+}
+
+h2
+{
+	display: block;
+	margin-left:50px; 
+	margin-right:50px; 
+	text-align: center;
+	font-family: 'Comic Sans MS';
+	color: white;
+	font-size: 14px;
+}
+
+/*FIN MODIFIER*/
+
+
+.profil
+{
+	position:absolute;
+	text-align:right;
+	padding-right:15px;
+	color:white;
+	top:0px;
+	right:0px;
+	opacity:0.8;
+	height:24px;
+	width:100px;
+	background-color: rgb(51, 153, 255);
+}
+
+#justdoit
+{
+	display:none;
+	width:100px;
+	height:100px;
+	top:0px;
+	left:0px;
+	float:left;
+}
+
+#menuplanetes
+{
+	margin-top: 6px;
+	margin-left: 8px;
+}
+
+#menu
+{
+	margin-top:10px;
+	float:left;
+	display:block;
+	border:1px solid black;
+	background-color: rgb(44,44,169);
+	list-style:none;
+	padding-right: 2px;
+	width:25%;
+	min-width:105px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 15px #000000;
+}
+
+.barre_menu
+{
+	background-color:rgb(20,20,110);
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	border: 1px solid black;
+	font-weight:normal;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+#restepage
+{
+	margin-top:10px;
+	float:left;
+	display:block;
+	margin-left:20px;
+	width:70%;
+	border: 1px solid black;
+	min-width:600px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 15px #000000;
+	padding-right:2px;
+	background-color: rgb(44,44,169);
+}
+
+#popup
+{
+	display:none;
+	width:800px;
+	height:800px;
+	position:absolute;
+	border: 1px solid black;
+	text-align:center    z-index:99999999999999999999;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background:rgb(50,50,165);
+}
+
+.boxcomment
+{
+	display:flex;
+	flex-direction:row;
+}
+
+.boxprofil
+{
+	width:20%;
+	border: 2px solid black;
+	text-align:justify;
+}
+
+.boxtext
+{
+	width:80%;
+	border: 2px solid black;
+	text-align:justify;
+}
+
+.comment_title
+{
+	font-size:2em;
+}
+
+.imgfill
+{
+	max-width:100%;
+	min-width:100%;
+}
+
+
+
+.redfont
+{
+	padding-top:5px;
+	color:red;
+}
+
+
+
+
+.testform
+{
+	width: 500px;
+	clear: both;
+}
+
+.testform input
+{
+	width: 50%;
+}
+
+.groschamptexte
+{
+	position:relative;
+	width:99%;
+	resize:vertical;
+	height:150px;
+}
+
+.bat
+{
+	display:block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.borderbat
+{
+	background-color: rgb(65,65,195);
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 15px #000000;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+}
+
+.imagebat
+{
+	border-radius:8px;
+	border: 1px solid black;
+}
+
+.imagecaracvaisseau
+{
+	border-radius:8px;
+	border: 1px solid black;
+	float:left;
+	width:18px;
+	height:18px;
+}
+
+.imagetooltip
+{
+	border-radius:8px;
+	border: 1px solid black;
+	float:left;
+}
+
+.nivbat
+{
+	border-radius: 2px;
+	background-color: rgb(40,40,145);
+	border: solid black 0.5px;
+	color: white;
+	height: 15px;
+	padding: 6px;
+	position: relative;
+	top: -171px;
+	left: 62px;
+	width: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titre
+{
+	padding-top:4px;
+	color:white;
+	min-height:25px;
+}
+
+.tooltipbat
+{
+	position:absolute;
+	width:500px;
+	box-shadow: 0 0 15px #000000;
+	border-radius: 10px 10px 10px 10px;
+	border: 2px solid black;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right: 5px;
+	background-color: rgb(50,50,165);
+	opacity:0.83;
+}
+
+.txttooltip
+{
+	margin-left: 160px;
+	text-align:left;
+	color: white;
+}
+
+.good
+{
+	color:rgb(20,175,20);
+}
+
+.bad
+{
+	color:rgb(255,20,20);
+}
+
+.barre_typebat
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(20,20,115);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_i
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(30,30,30);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_a
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(110,20,20);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_b
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(20,110,20);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_c
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(20,20,110);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_d
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(110,110,20);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_e
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(110,110,110);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_f
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(20,110,110);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.barre_typecomp_g
+{
+	width:100%;
+	text-align:center;
+	font-size:3em;
+	font-family: 'Kingthings_Calligraphica';
+	color:white;
+	background-color: rgb(110,20,110);
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+.bat_construire
+{
+}
+
+input[type=submit]
+{
+	background-color: rgb(75,75,239)color:white;
+}
+
+.decomptebat
+{
+	color: white;
+	font-weight:bold;
+}
+
+.decompterech
+{
+	color: white;
+	font-weight:bold;
+}
+
+
+a
+{
+	text-decoration:none;
+}
+
+.onglets a
+{
+	color:white;
+	font-family: 'Kingthings_Calligraphica';
+	font-size : 3em;
+}
+
+#ongcreervaisseau a
+{
+	color:white;
+	font-family: 'Kingthings_Calligraphica';
+	font-size : 1.5em;
+}
+
+.onglets a :visited
+{
+	color:white;
+	font-family: 'Kingthings_Calligraphica';
+	font-size : 3em;
+}
+
+#ongbat2
+{
+	color:white;
+}
+
+#ongtech2
+{
+	display:none;
+	color:white;
+}
+
+#ongcomp2
+{
+	display:none;
+	color:white;
+}
+
+#ongdef2
+{
+	display:none;
+	color:white;
+}
+
+#ongunit2
+{
+	display:none;
+	color:white;
+}
+
+#ongvaisseaux2
+{
+	color:white;
+}
+
+#ongcomposants2
+{
+	display:none;
+	color:white;
+}
+
+#ongassembler2
+{
+	display:none;
+	color:white;
+}
+
+.onglets
+{
+	text-align:justify;
+}
+
+.onglets span
+{
+	color:white;
+	font-size:3em;
+}
+
+.onglets a.ongactif
+{
+	color:rgb(10,10,75);
+	font-size:3em;
+}
+
+.bandeletteblanche
+{
+	background-color:rgb(70,70,70);
+}
+
+.popup
+{
+	display:none;
+	width:800px;
+	height:650px;
+	border: 1px solid black;
+	position:fixed;
+	text-align:center;
+	z-index:99999999999999999999;
+	border-radius:20px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	background-color:rgb(50,50,165);
+	opacity:0.9;
+}
+
+#popupcreervaisseau
+{
+	display:none;
+	width:1100px;
+	height:650px;
+	border: 1px solid black;
+	position:fixed;
+	z-index:99999999999999999999;
+	border-radius:20px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	background-color:rgb(50,50,165);
+	opacity:0.9;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.titlepopup
+{
+	width:100%;
+	height:40px;
+	text-align:center;
+	font-family:'Kingthings_Calligraphica';
+	color:white;
+	font-size: 2em;
+	background:rgb(20,20,110);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.imgdepopup
+{
+	float:left;
+	margin-left:80px;
+	margin-top:80px;
+}
+
+.popup_description
+{
+	margin-left:345px;
+	margin-right:25px;
+	margin-top:80px;
+}
+
+.popup_close
+{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+
+.popup_table
+{
+	color:white;
+	margin-top:40px;
+	font-size:1.5em;
+}
+
+#grossedivdelamorkitue
+{
+	display:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity:0.6;
+	top:0%;
+	left:0%;
+}
+
+.boutonconstruirepopup
+{
+	position:absolute;
+	left:350px;
+	bottom:15px;
+}
+
+.boutondetruirepopup
+{
+	position:absolute;
+	left: 15px;
+	bottom:15px;
+}
+
+.menu_txt
+{
+	color:white;
+	margin-left:8px;
+	width:100%;
+	font-size:1.3em;
+}
+
+.menu_txt:hover
+{
+	background-color: rgb(105,105,205);
+	color: rgb(50,50,165);
+	border-radius:5px;
+}
+
+.menu_txt:active
+{
+	background-color:rgb(60,60,175);
+	border-radius:5px;
+	color:rgb(40,40,140);
+}
+
+.bande_composant
+{
+	height:150px;
+	background-image: url("img/futuristic_band_dark");
+	margin-left:auto;
+	margin-right:auto;
+	background-size:cover;
+	padding-left:50px;
+	padding-top:25px;
+}
+
+.infraselected
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_i
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_a
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_bl
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_bo
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_re
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_br
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_ra
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.composelected_oc
+{
+	border-radius:8px;
+	border:3px solid rgb(200,120,40);
+}
+
+.arme
+{
+	display:none;
+	min-height:275px;
+	padding-left: 12px;
+	font-size:1.5em;
+	background-image:url("bluetest");
+	background-size:cover;
+	background-position:center;
+}
+
+.title_tooltip
+{
+	font-weight:bold;
+	font-size:1.7em;
+}
+
+.prix
+{
+	float:left;
+}
+
+.caractéristiques
+{
+	position:absolute;
+	margin-left:50%;
+}
+
+.séparation
+{
+	width:100%;
+	height:15px;
+	background-image:url("bannertest");
+	background-size:cover;
+	background-position:center;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	box-shadow: 0 0 15px #000000;
+}
+
+#barrecompoencreation
+{
+	width:100%;
+	height:200px;
+	background-image:url("futuristic_band_dark");
+	background-position:center;
+	background-size:cover;
+}
+
+.miniboxbarrecompo
+{
+	width:55px;
+	height:70px;
+}
+
+.titleminibox
+{
+	top:0px;
+}
+
+#titlebarrecompoencreation
+{
+	width:100%;
+	height:30px;
+	text-align:center;
+	font-family:'Kingthings_Calligraphica';
+	font-size:1.5em;
+	color:white;
+	background-color:black;
+	opacity:0.8;
+}
+
+#carac_vaisseau_1
+{
+	float:left;
+}
+
+#carac_vaisseau_2
+{
+	position:relative;
+	float:right;
+	text-align:right;
+}
+
+.formvaisseau
+{
+	margin-left:150px;
+}
+
+#ongcreervaisseau
+{
+	height:25px;
+	width: 100%;
+}
+
+#ongcreervaisseau a.ongactifCV
+{
+	color:rgb(10,10,75);
+	font-size:1.7em;
+}
+
+.champCValigned
+{
+	left:370px;
+	position:fixed;
+}
+
+.champCValigned2
+{
+	left:720px;
+	position:fixed;
+}
+
+.row1
+{
+	width:300px;
+}
+
+.row2
+{
+	top:312px;
+	position:relative;
+	width:300px;
+	position:fixed;
+	left:500px;
+}
+
+/**/
