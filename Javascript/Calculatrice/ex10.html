@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ex10</title>
+  <link rel="stylesheet" type="text/css" href="ex10.css">
+</head>
+
+<body>
+  <div id="calculatrice">
+    <h1 class="titre">Calculatrice ex10<h1>
+        <table>
+          <tr>
+            <td colspan="4" id="cadre">
+              <span id="resultat"></span>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <input class="nombre" type="button" value="1" id="button1" onclick="valeur(1)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="2" id="button2" onclick="valeur(2)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="3" id="button3" onclick="valeur(3)" />
+            </td>
+            <td>
+              <input class="operateur" type="button" value="C" id="buttone" onclick="effacer()" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="nombre" type="button" value="4" id="button4" onclick="valeur(4)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="5" id="button5" onclick="valeur(5)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="6" id="button6" onclick="valeur(6)" />
+            </td>
+            <td>
+              <input class="operateur" type="button" value="+" id="button+" onclick="plus()" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="nombre" type="button" value="7" id="button7" onclick="valeur(7)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="8" id="button8" onclick="valeur(8)" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="9" id="button9" onclick="valeur(9)" />
+            </td>
+            <td>
+              <input class="operateur" type="button" value="-" id="button-" onclick="moins()" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="operateur" type="button" value="x" id="button*" onclick="multiplier()" />
+            </td>
+            <td>
+              <input class="nombre" type="button" value="0" id="button0" onclick="valeur(0)" />
+            </td>
+            <td>
+              <input class="operateur" type="button" value="÷" id="button/" onclick="division()" />
+            </td>
+            <td>
+              <input class="operateur" type="button" value="=" id="button=" onclick="resultat()" />
+            </td>
+          </tr>
+
+        </table>
+  </div>
+
+</body>
+<script type="text/javascript">
+
+
+  function valeur(val) {                                                  //On recupere le nombre entrée dans la span resultat , en parametre de la function valeur et  on l'addition a la chaine de caractére 
+    document.getElementById("resultat").innerHTML += val;
+  }
+  function effacer() {                                                    //Cette fonction remplace la chaine de caractére par rien pour l'effacer
+    document.getElementById("resultat").innerHTML = "";
+  }
+  function plus() {                                                      //On recupere l'operateur cliquée et on l'ajoute a la chaine de caractére 
+    document.getElementById("resultat").innerHTML += "+";
+  }
+  function moins() {                                                     //On recupere l'operateur cliquée et on l'ajoute  a la chaine de caractére 
+    document.getElementById("resultat").innerHTML += "-";
+  }
+  function multiplier() {                                                //On recupere l'operateur cliquée et on l'ajoute  a la chaine de caractére 
+    document.getElementById("resultat").innerHTML += "*";
+  }
+  function division() {                                                  //On recupere l'operateur cliquée et on l'ajoute  a la chaine de caractére 
+    document.getElementById("resultat").innerHTML += "/";
+  }
+
+  function resultat() {                                                  //Grace on a la fonction eval , on calcule tout la chaine de caractére. Ensuite on donne le resultat de l'opération à égal puis a la span resultat
+    var egal = eval(document.getElementById('resultat').innerHTML);
+    document.getElementById('resultat').innerHTML = egal;
+  }
+</script>
+
+</html>

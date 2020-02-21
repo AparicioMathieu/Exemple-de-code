@@ -1,0 +1,53 @@
+body{
+    font-family: "Helvetica Neue", Helvetica;
+}
+h1
+{
+    
+    font-family: 'book antiqua';
+    font-size: 36px;
+    color: rgb(204, 27, 14);
+    text-shadow: 2px 3px 2px #918a8a;
+}
+h2
+{
+    
+    font-family: 'book antiqua';
+    font-size: 36px;
+    color: rgb(1, 107, 33);
+    text-shadow: 2px 3px 2px #918a8a;
+}
+.rgb{
+    display: inline-block;
+    width: 400px;
+    height: 180px;
+    margin-left: 100px;
+}
+.hsl{
+    
+    display: inline-block;
+    width: 400px;
+    height: 180px;
+    margin-left: 400px;
+}
+#cadrergb{
+    width: 100%;
+    height: 100px;
+    background: #221727;
+    transition: background 100ms;
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+
+#cadrehsl{
+    width: 100%;
+    height: 100px;
+    background: #221727;
+    transition: background 100ms;
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+input{
+    display: block;
+    width: 100%;
+}

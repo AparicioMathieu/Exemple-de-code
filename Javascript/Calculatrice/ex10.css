@@ -1,0 +1,37 @@
+#calculatrice {
+    margin-left: 720px;
+}
+
+.titre{
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    color:  rgb(160, 104, 21);
+  }
+#cadre{
+      height: 37px;
+      width: 200px;
+      border: 2px solid rgb(160, 104, 21);
+      border-radius: 10px;
+  }
+
+.nombre{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      color: white;
+      border: 2px solid rgb(160, 104, 21);
+      border-radius: 10px;
+      background-color:  rgb(160, 104, 21);
+  }
+
+.operateur{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      color: white;
+      border: 2px solid  rgb(160, 104, 21);
+      border-radius: 10px;
+      background-color:  rgb(160, 104, 21);
+  }
+

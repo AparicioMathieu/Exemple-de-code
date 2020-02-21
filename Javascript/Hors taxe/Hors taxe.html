@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset="utf-8">
+                <title>Ex02</title>
+                <link rel="stylesheet" type="text/css" href="ex02.css">
+                
+            </head>
+            <body>
+                    <div class="calcule">
+                           Montant Hors Taxe :   <input id="ht" placeholder="Hors taxe" type="text" />
+                           Taux TVA : <input id="tva" placeholder="TVA" type="text" />
+                    </div>
+                    <div class="res"> 
+                    <button onClick="Resultat()">Convertir</button>
+                           Montant TCC :  <input id="Resultat" placeholder="TTC" type="text" />  
+                    </div>
+                        
+            </body>
+            
+            <script type="text/javascript">
+                
+                function Calcule(ht,tva){
+                    var inter = (ht /100) * tva ;
+                    var resultat = ht + inter ;
+                    resultat = resultat.toFixed(2);                         // Je fixe mon resultat a deux chiffre aprés la virgule
+                    return resultat;
+                }
+
+                function Resultat(){
+                    var element = document.getElementById("ht");            // Je recupere l'id' de l'element ht
+                    var horstaxestr = element.value;                        // Je recupere la valeur de l'element ht
+                    var horstaxe = parseInt(horstaxestr);                   // J'ai obtenu une string que je transforme en nombre
+                    
+                    var element2 = document.getElementById("tva");          // Je recuperer l'id de l'element tva
+                    var tvastr = element2.value;                            // Je recupere la valeur de l'element tva
+                    var tva = parseInt(tvastr);                             // J'ai obtenu une string que je transforme en nombre
+                    
+                    var resultat = Calcule(horstaxe,tvastr);                // Je stocke le retour de la fonction Calcule
+                    var elementres = document.getElementById("Resultat");   // Je recupere l'id de l'element Resultat
+                    elementres.value = resultat;                            // Je change la valeur de l'element resultat
+                }
+            </script>
+</html>
+

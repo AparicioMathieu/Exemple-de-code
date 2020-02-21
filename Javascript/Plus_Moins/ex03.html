@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset="utf-8">
+                <title>Ex03</title>
+                <link rel="stylesheet" type="text/css" href="ex03.css">
+                
+            </head>
+            <body>
+                <input id="prop"  class="prop" placeholder="Votre proposition" />
+                
+                <button  id="start" class="start" onClick="compare()">Proposez</button>
+                <button  id="reponse" class="reponse"  ></button>
+                <img id="img" class="neutre" width="100" />
+                
+            </body>
+            
+            <script type="text/javascript">
+
+ 
+                        
+                    // genere un nombre en 0 et 100
+                    function alea(){
+                    var alea = Math.random()*100;
+                    var nombre = Math.round(alea);
+                    return nombre;
+                    }
+                    
+                    var res = alea();
+
+                    function compare(){
+                        var element = document.getElementById("prop");
+				        var elementStr = element.value;
+                        var proposition = parseInt(elementStr);      
+                        var element2 = document.getElementById("reponse");
+                         
+                        if (proposition > res) {
+                            var image = document.getElementById("img");
+                        image.setAttribute("src","poucebas.png");
+                        element2.setAttribute("class","manque");
+                        document.getElementById("reponse").innerHTML = "Le nombre que tu cherche est moins elevée";
+                        }
+                        else if (proposition < res) {
+                            var image = document.getElementById("img");
+                        image.setAttribute("src","poucehaut.png");
+                        element2.setAttribute("class","manque");
+                        document.getElementById("reponse").innerHTML = "Le nombre que tu cherche est plus elevée";
+                        }
+
+                        else  {
+                            var image = document.getElementById("img");
+                        image.setAttribute("src","https://www.esgci.com/sites/default/files/or-trophee_23-2147506801.jpg");
+                        element2.setAttribute("class","winner");
+                        document.getElementById("reponse").innerHTML = "TROUVEE !! VOUS ETES NOTRE CHAMPIONS !!!!!!!!!";
+                        }
+
+                    }
+                    
+               
+            </script>
+</html>
+

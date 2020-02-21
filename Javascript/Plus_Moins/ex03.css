@@ -1,0 +1,66 @@
+
+  .start {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  
+  .prop {
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(255, 254, 254);
+    color: rgb(53, 49, 48);
+    font-size: 25px;
+    text-align: center;
+    
+  }
+
+  .neutre{
+    
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    background-color: white;
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin : auto;
+  }
+  
+
+  .reponse{
+    width: 300px;
+    height: 180px;
+    padding: 25px;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin : auto;
+  }
+
+  .manque{
+    width: 300px;
+    height: 180px;
+    padding: 25px;
+    background-color: rgb(156, 35, 35);
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin : auto;
+  }
+
+  .winner{
+    width: 300px;
+    height: 180px;
+    padding: 25px;
+    background-color: rgb(10, 124, 0);
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin : auto;
+  }

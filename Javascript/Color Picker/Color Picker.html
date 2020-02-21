@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset="utf-8">
+                <title>Ex</title>
+                <link rel="stylesheet" type="text/css" href="ex01.css">
+                
+            </head>
+            <body>
+                <div class="rgb">
+                    <h1>RGB COLOR PICKER</h1>
+                    Rouge <input type="range" min="0" max="255" id="rouge" > 
+                    Vert <input type="range" min="0" max="255"  id="vert" >
+                    Bleu <input type="range" min="0" max="255"  id="bleu" >
+                    <div id="cadrergb"></div>
+                </div>
+
+                <div class="hsl">
+                        <h2>HSL COLOR PICKER</h2>
+                    Teinte <input type="range" min="0" max="260"  id="teinte" >
+                    Saturation <input type="range" min="0" max="100"  id="satur" >
+                    Lumiosité <input type="range" min="0" max="100"  id="lumiosité" >
+                    <div id="cadrehsl"></div>
+                </div>
+
+            </body>
+            
+            <script type="text/javascript">
+                var input = document.querySelectorAll(".rgb input");                //recuperer les elements de rgb input
+                    for(var i = 0; i < input.length; i++){                          // Je créer une boucle 
+                    input[i].addEventListener("input", function(){                  // Cette fonction permet de d'actualisée la position du bouton
+                            rouge = document.getElementById("rouge").value,         // Je recupere la valeur de l'element rouge dans la variable rouge
+                            vert = document.getElementById("vert").value,           // Je recupere la valeur de l'element vert dans la variable vert
+                            bleu = document.getElementById("bleu").value;           // Je recupere la valeur de l'element bleu dans la variable bleu
+                            var display = document.getElementById("cadrergb");      // Je recupere l'id de l'element cadre rgb et je le stocke dans la variable display
+                        display.style.background = "rgb(" + rouge + ", " + vert + ", " + bleu + ")"; // Je dit que la valeur de displaystylebackground de display est mes variable rouge , vert bleu a la suite
+                    });
+                }
+
+                var input = document.querySelectorAll(".hsl input");
+                    for(var i = 0; i < input.length; i++){
+                    input[i].addEventListener("input", function(){
+                            teinte = document.getElementById("teinte").value,
+                            satur   = document.getElementById("satur").value,
+                            lumiosité  = document.getElementById("lumiosité").value;
+                            var display2 = document.getElementById("cadrehsl");
+                        display2.style.background = "hsl(" + teinte + ", " + satur + "%, " + lumiosité + "%)";
+                    });
+                }
+            </script>
+</html>
+
